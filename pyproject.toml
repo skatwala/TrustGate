@@ -1,0 +1,26 @@
+[project]
+name = "trustgate"
+version = "0.1.0"
+description = "Enterprise-grade Python/FastAPI compliance & security decorator toolkit"
+authors = [
+    { name = "Saptarshi Katwala" }
+]
+requires-python = ">=3.11"
+
+dependencies = [
+    "fastapi",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "ruff",
+    "black",
+    "pyright",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+[dependency-groups]
+dev = ["ruff", "black", "pytest", "pyright"]
